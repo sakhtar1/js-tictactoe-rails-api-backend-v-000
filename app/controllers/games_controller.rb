@@ -17,7 +17,7 @@ class GamesController < ApplicationController
 
   def create
     Game.create(game_params)
-    redirect_to game_path
+    render game_path
   end
 
   def show
