@@ -16,7 +16,7 @@ class GamesController < ApplicationController
 
 
   def create
-    Game.create(game_params)
+    Game.create(params[:state])
     render game_path
   end
 
