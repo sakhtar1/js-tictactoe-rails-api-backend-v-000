@@ -3,10 +3,7 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
-    respond_to do |f|
-      f.json {render json: @games, status: 200}
-      f.html {render :index}
-    end
+    render json: @games, status: 200  
   end
 
 
